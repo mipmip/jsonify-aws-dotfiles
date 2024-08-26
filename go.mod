@@ -1,4 +1,4 @@
-module src
+module github.com/mipmip/jsonify-aws-dotfiles
 
 go 1.22
 
