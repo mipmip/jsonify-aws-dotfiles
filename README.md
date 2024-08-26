@@ -10,6 +10,10 @@ The AWS config and credentials file (typically located in `~/.aws`) have values 
 2. [Follow the instructions](https://github.com/golang/go/wiki/GOPATH#integrating-gopath) for adding build go packages to your PATH.
 3. Install with `go get -u github.com/paul-nelson-baker/jsonify-aws-dotfiles`
 
+## How to build
+
+run `make build`
+
 ## How to use
 
 Running the command will load the two files (`~/.aws/config` and `~/.aws/credentials`) and will dump the JSON file to standard out. You can manually specify either file with the `--config-file=` or `--credentials-file=`. You can toggle logging with `--verbose`, it will print to stderr as to not interfere with the JSON written to stdout. If desired, an output file can be used instead of writing the JSON string to file instead of stdout with `--output-file=`
