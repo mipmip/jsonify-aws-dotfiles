@@ -1,6 +1,6 @@
 module src
 
-go 1.16
+go 1.22
 
 require github.com/jessevdk/go-flags v1.6.1
 
