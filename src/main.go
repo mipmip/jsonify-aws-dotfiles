@@ -14,6 +14,8 @@ import (
 	"strconv"
 )
 
+const version = "v1.0.0"
+
 type CliOptions struct {
 	Verbose         bool   `short:"v" long:"verbose" description:"Verbose logging to stderr"`
 	ConfigFile      string `long:"config-file" description:"The location of the config file"`
