@@ -24,6 +24,7 @@ builds:
       - linux
       - windows
       - darwin
+    main: ./src
 
 archives:
   - format: tar.gz
