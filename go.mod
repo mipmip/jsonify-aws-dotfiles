@@ -1,4 +1,4 @@
-module github.com/mipmip/jsonify-aws-dotfiles
+module github.com/wearetechnative/jsonify-aws-dotfiles
 
 go 1.22
 

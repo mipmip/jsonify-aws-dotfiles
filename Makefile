@@ -1,7 +1,7 @@
-VERSION := $(shell grep version ./src/main.go|head -n1 | tr -d \"|cut -dv -f3)
+VERSION := $(shell grep version ./main.go|head -n1 | tr -d \"|cut -dv -f3)
 
 build:
-	go build -o jsonify-aws-dotfiles -v ./src
+	go build -o jsonify-aws-dotfiles main.go
 
 release:
 ifndef GITHUB_TOKEN

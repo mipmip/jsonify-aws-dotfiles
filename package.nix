@@ -1,10 +1,12 @@
-{ lib, buildGoModule, fetchgit }:
+{ lib, buildGoModule, go }:
 buildGoModule rec {
   pname = "jsonify-aws-dotfiles";
 
   version = "1.0";
 
-  src = ./.
+  src = ./.;
+
+  doCheck = false;
 
   vendorHash = "sha256-W6XVd68MS0ungMgam8jefYMVhyiN6/DB+bliFzs2rdk=";
 
@@ -12,7 +14,8 @@ buildGoModule rec {
     description = ''
       Convert aws config and credential files into a single JSON object
     '';
-    homepage = "https://github.com/mipmip/jsonify-aws-dotfiles";
+    homepage = "https://github.com/wearetechnative/jsonify-aws-dotfiles";
     license = licenses.mit;
   };
+
 }
