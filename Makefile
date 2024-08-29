@@ -10,4 +10,4 @@ endif
 	git commit -am 'Update version to $(VERSION)'||echo clean
 	git tag -a $(VERSION) -m '$(VERSION)'
 	git push origin $(VERSION)
-	goreleaser --rm-dist
+	goreleaser --clean
